@@ -1,0 +1,71 @@
+﻿
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.tableCell {
+    display: table-cell;
+    text-align: center;
+}
+
+.bulletWrap {
+    position: relative;
+}
+
+    .bulletWrap .before, .bulletWrap .after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        top: 50%;
+        height: 4px;
+        background: #8c9a9c;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .bulletWrap .after {
+        width: 50%;
+        background: #00bedc;
+    }
+
+.slide a {
+    width: 76px;
+    height: 76px;
+    background: #117a8b;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 100%;
+    border: 4px solid #89c2cc;
+    transition: 0.3s all ease;
+    position: relative;
+}
+
+    .slide a.active, .slide a:hover {
+        background: #b0e218;
+        border-color: #9fbb06;
+    }
+
+    .slide a i {
+        font-size: 35px;
+        line-height: 76px;
+    }
+/*
+.slide.tableCell { position: relative; }
+.slide.tableCell:first-child:before, .slide.tableCell:last-child:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #1c1c1c;
+    width: 50%;
+    z-index: 0;
+}
+.slide.tableCell:last-child:before {
+	left: auto;
+	right: 0;
+}
+*/

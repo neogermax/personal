@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginTransaccion.aspx.cs" Inherits="QaVision.Controller.LoginTransaccion" %>

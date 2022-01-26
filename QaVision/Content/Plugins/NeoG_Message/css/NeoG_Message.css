@@ -1,0 +1,185 @@
+/*CONTENEDOR PRINCIPAL*/
+.ContainerGeneral {
+    width: 60%;
+    margin-left: 20%;
+    position: absolute;
+    margin-top: 7%;
+    box-shadow: 5px 5px 2px #888888;
+    z-index: 1000000;
+    resize: both;
+}
+
+/*CONTENEDOR DE LA PARTE DE TITULO Y BOTONES*/
+.ContentBanner {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/*CONTENEDOR DEL TITULO DE LA ALAERTA*/
+.BannerTitlte {
+    width: 90%;
+}
+
+/*CONTENEDOR DE BOTONES*/
+.BannerButtons {
+    width: 10%;
+}
+
+    /*ESTABLESER DE LA IMAGEN DE CIERRE DE LA ALERTA*/
+    .BannerButtons .ImagenClose {
+        -webkit-transition: all 0.5s;
+        content: url("../img/CloseNeo.png");
+    }
+
+/*MANEJO DE LA IMAGEN DE CIERRE*/
+.ImagenClose {
+    float: right;
+    position: inherit;
+    margin-top: 7px;
+    margin-left: 5px;
+    width: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+/*ESTILO DE LA LETRA DEL TITULO*/
+.TitleText {
+    margin-left: 41px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/*CONTENEDOR DE LA INFO A VISAULIZAR*/
+.ContentInfo {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*MANEJO DE LA IMAGEN DEL TITULO*/
+.Imagen {
+    float: left;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 5px;
+    width: 20px;
+}
+
+/*MANEJO DEL BLOQUEO DEL FONDO*/
+.BlackFondo {
+    z-index: 999999;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    cursor: wait;
+    position: fixed;
+}
+
+/*MANEJO DE COLOR*/
+#NeoG_Description {
+    color: #fff;
+}
+/************************************************************************************************************************************************************************/
+/* MANEJO DE COLORES */
+/************************************************************************************************************************************************************************/
+/*ESTILO AZUL OSCURO BOOSTRAP*/
+.ColorPrimary {
+    -webkit-transition: all 0.8s; /* Safari */
+    transition: all 0.8s;
+    background: #428bca;
+    border: solid 1px #7ec3ff;
+    color: #FFF;
+}
+    /*HOVER:AZUL OSCURO*/
+    .ColorPrimary:hover {
+        -webkit-transition: all 0.8s; /* Safari */
+        transition: all 0.8s;
+        background: #3176b1;
+    }
+    /*IMAGEN AZUL OSCURO*/
+    .ColorPrimary .Imagen {
+        -webkit-transition: all 0.5s;
+        content: url("../img/information.png");
+    }
+
+/*ESTILO AZUL CLARO BOOSTRAP*/
+.ColorInfo {
+    background-color: #5bc0de;
+    border: solid 1px #78e0ff;
+    color: #FFF;
+}
+    /*HOVER:AZUL CLARO*/
+    .ColorInfo:hover {
+        -webkit-transition: all 0.8s; /* Safari */
+        transition: all 0.8s;
+        background: #39b3d7;
+    }
+    /*IMAGEN AZUL CLARO*/
+    .ColorInfo .Imagen {
+        -webkit-transition: all 0.5s;
+        content: url("../img/info.png");
+    }
+
+/*ESTILO VERDE BOOSTRAP*/
+.ColorSuccess {
+    background-color: #5cb85c;
+    border: solid 1px #6ad46a;
+    color: #FFF;
+}
+    /*HOVER:VERDE*/
+    .ColorSuccess:hover {
+        -webkit-transition: all 0.8s; /* Safari */
+        transition: all 0.8s;
+        background: #47a447;
+    }
+    /*IMAGEN  VERDE*/
+    .ColorSuccess .Imagen {
+        -webkit-transition: all 0.5s;
+        content: url("../img/Success.png");
+    }
+
+/*ESTILO ROJO BOOSTRAP*/
+.ColorDanger {
+    background-color: #d9534f;
+    border: solid 1px #ff7e7a;
+    color: #FFF;
+}
+    /*HOVER:ROJO*/
+    .ColorDanger:hover {
+        -webkit-transition: all 0.8s; /* Safari */
+        transition: all 0.8s;
+        background: #ac2925;
+    }
+    /*IMAGEN  ROJO*/
+    .ColorDanger .Imagen {
+        -webkit-transition: all 0.5s;
+        content: url("../img/Danger.png");
+    }
+
+/*ESTILO AMARILLO BOOSTRAP*/
+.ColorWarning {
+    background-color: #f0ad4e;
+    border: solid 1px #ffd599;
+    color: #FFF;
+}
+    /*HOVER:AMARILLO*/
+    .ColorWarning:hover {
+        -webkit-transition: all 0.8s; /* Safari */
+        transition: all 0.8s;
+        background: #d58512;
+    }
+    /*IMAGEN  AMARILLO*/
+    .ColorWarning .Imagen {
+        -webkit-transition: all 0.5s;
+        content: url("../img/Warning.png");
+    }

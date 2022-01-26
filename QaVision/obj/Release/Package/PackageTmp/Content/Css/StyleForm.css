@@ -1,0 +1,705 @@
+﻿.Hand {
+    cursor: pointer;
+    cursor: hand; /*internet exlorer*/
+}
+
+.CampoNum {
+    text-align: center;
+    font-size: 20px;
+    color: #0c0d3d;
+    font-weight: bold;
+}
+
+.CampoNumLabel {
+    text-align: center;
+    font-size: 20px;
+    color: #0c0d3d;
+    font-weight: bold;
+    background: #fff;
+    border: solid 0px;
+    width: 100%;
+}
+
+.CampoNumContador {
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: bold;
+    border: solid 0px;
+    width: 100%;
+}
+
+.CampoNumText {
+    text-align: center;
+    font-size: 20px;
+    color: #0c0d3d;
+    font-weight: bold;
+}
+
+.LabelGrid {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.LabelNum {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Enc_Fijo {
+    height: 500px;
+    overflow: auto;
+}
+
+
+.Tableflex {
+    width: 100%;
+    overflow: auto;
+}
+
+#WindowLoad {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3200;
+    filter: alpha(opacity=65);
+    -moz-opacity: 65;
+    opacity: 0.65;
+    background: #999;
+}
+
+.Fondo {
+    margin-bottom: 30px;
+}
+
+.TopTime {
+    margin-top: 20px;
+}
+
+
+.accordion {
+    margin: 10px;
+}
+
+    .accordion dt, .accordion dd {
+        padding: 10px;
+        border: 1px solid #AAAAAA;
+        border-bottom: 0;
+    }
+
+        .accordion dt:last-of-type, .accordion dd:last-of-type {
+            border-bottom: 1px solid black;
+        }
+
+        .accordion dt a, .accordion dd a {
+            display: block;
+            color: white;
+            font-weight: bold;
+        }
+
+    .accordion dd {
+        border-top: 0;
+        font-size: 12px;
+    }
+
+        .accordion dd:last-of-type {
+            border-top: 1px solid white;
+            position: relative;
+            top: -1px;
+        }
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    height: 25px;
+    width: 25px;
+    background-color: #737373;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerX:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a GOLD background */
+.containerX input:checked ~ .checkmark {
+    background-color: #a97d00;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerX input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerX .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+.btn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 25px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: #E91E63; /* Color de fondo */
+    padding: 14px 28px; /* Relleno del boton */
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+    .btn-flotante:hover {
+        background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+        transform: translateY(-7px);
+    }
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
+.funkyradio div {
+    clear: both;
+    overflow: hidden;
+}
+
+.funkyradio label {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+    font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+    display: none;
+}
+
+    .funkyradio input[type="radio"]:empty ~ label,
+    .funkyradio input[type="checkbox"]:empty ~ label {
+        position: relative;
+        line-height: 2.5em;
+        text-indent: 3.25em;
+        margin-top: 2em;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .funkyradio input[type="radio"]:empty ~ label:before,
+        .funkyradio input[type="checkbox"]:empty ~ label:before {
+            position: absolute;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 2.5em;
+            background: #D1D3D4;
+            border-radius: 3px 0 0 3px;
+        }
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+
+    .funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+    .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+        content: '\2714';
+        text-indent: .9em;
+        color: #C2C2C2;
+    }
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+}
+
+    .funkyradio input[type="radio"]:checked ~ label:before,
+    .funkyradio input[type="checkbox"]:checked ~ label:before {
+        content: '\2714';
+        text-indent: .9em;
+        color: #333;
+        background-color: #ccc;
+    }
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+    color: #333;
+    background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5bc0de;
+}
+
+.DownUp,
+.DownButton {
+    padding: 20px;
+    background: #024959;
+    font-size: 25px;
+    border-radius: 50%;
+    border: solid 3px #8c8c8c;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.rombo {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #1e8837;
+    background: #55da29;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rottext {
+    margin-top: 70%;
+    margin-left: 10%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: #1e8837;
+}
+
+.textoRot {
+    position: absolute;
+    font-size: 10px;
+    color: #FFF;
+}
+
+.oval-half {
+    padding-left: 5%;
+    width: 100%;
+    height: 30px;
+    -moz-border-radius: 0 5% / 0 100%;
+    -webkit-border-radius: 0 5% / 0 100%;
+    border-radius: 0 5% / 0 100%;
+    border: 2px solid #b3b3b3;
+}
+
+#talkbubble {
+    text-align: center;
+    padding: 2% 3%;
+    font-size: 17px;
+    font-weight: bold;
+    width: 80%;
+    height: 90px;
+    background: #5786af;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 7%;
+    border: solid 2px #cacaca;
+    color: #cacaca;
+}
+
+    #talkbubble:before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        top: 26px;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-right: 26px solid #cacaca;
+        border-bottom: 13px solid transparent;
+    }
+
+.LabelDisabled {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #918787;
+}
+
+.CssNotificacion {
+    position: absolute; /*El div será ubicado con relación a la pantalla*/
+    right: 1%; /*A la izquierda deje un espacio de 0px*/
+    bottom: 1%;
+    width: 320px;
+    height: 120px;
+    border: 2px solid #CACACA;
+    background: #FFF;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.CssCampana {
+    float: left;
+    color: #FFF;
+    padding-top: 7%;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 117px;
+    border: 1px solid #CACACA;
+    background: #504e4e;
+    border-style: dashed;
+}
+
+.CssMsn {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 5px;
+    color: #070649;
+}
+
+.Csstitle {
+    font-size: 16px;
+    text-align: center;
+    color: #070649;
+    font-weight: bold;
+}
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ring {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+
+    2% {
+        -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+
+    4% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    6% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    8% {
+        -webkit-transform: rotate(-22deg);
+        -ms-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        transform: rotate(22deg);
+    }
+
+    12% {
+        -webkit-transform: rotate(-18deg);
+        -ms-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+
+    14% {
+        -webkit-transform: rotate(18deg);
+        -ms-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+
+    16% {
+        -webkit-transform: rotate(-12deg);
+        -ms-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+
+    18% {
+        -webkit-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
+    -webkit-animation: ring 2s ease infinite;
+    animation: ring 2s ease infinite;
+    transform-origin-x: 50%;
+    transform-origin-y: 0px;
+    transform-origin-z: initial;
+}
+
+#MsnNotificacion {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.ContadorBell {
+    background: #d9534f;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    float: right;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.CardNotificacion {
+    background: #FFF;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+    .CardNotificacion:hover {
+        background: #e9e9e9;
+    }
+
+.card-header .fa {
+    transition: .3s transform ease-in-out;
+}
+
+.card-header .collapsed .fa {
+    transform: rotate(90deg);
+}
+
+.card-header a {
+    color: #FFF;
+}
+
+
+/* Button Style 3 (Radius) */
+.radius-icon {
+    min-height: 100px;
+    line-height: 100px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+    .radius-icon a {
+        margin: 20px;
+        border-radius: 20px;
+        font-size: 13px;
+        width: 150px;
+        font-weight: bold;
+    }
+
+.btn-purple {
+    padding: 0.375rem 0.75rem;
+    background: #d733da;
+    color: #FFF;
+}
+
+    .btn-purple:hover {
+        transition: all 0.15s ease-in-out;
+        background: #a025a3;
+        color: #FFF;
+    }
+
+
+
+/* Clase que tendra el tooltip */
+
+.cssToolTip {
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+
+    color: #ff8c00; /* Color del texto */
+}
+
+    /* El tooltip */
+
+    .cssToolTip span {
+        background: rgba(20,20,20,0.9) url('img/info.gif') center left 5px no-repeat;
+        border: 2px solid #87cefa;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px #333;
+        color: #87cefa;
+        display: none; /* El tooltip por defecto estara oculto */
+
+        font-size: 0.8em;
+        padding: 10px 10px 10px 35px;
+        max-width: 6000px;
+        position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+        top: 15px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+        left: 100px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+        z-index: 100; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+    }
+
+    /* El tooltip cuando se muestra */
+
+    .cssToolTip:hover span {
+        display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+    }
+
